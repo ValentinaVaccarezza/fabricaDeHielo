@@ -1,0 +1,71 @@
+// variables
+* {
+    margin: 0%;
+    padding:0%
+}
+
+$fondo-body: #A3BFD9;
+$fondo-nav: #0460D9;
+$fondo-nosotros: #022859;
+$fondo-redes: rgb(32, 56, 100);
+$fondo-footer: #033E8C;
+
+$w-10: 10%;
+$w-20: 20%;
+$w-25: 25%;
+$w-35: 35%;
+$w-50: 50%;
+$w-75: 75%;
+$w-100: 100%;
+$h-200:200px;
+$h-600:600px;
+$h-1200:1200px;
+
+$display-flex: flex;
+$display-block:block;
+
+/*bucle footer*/
+@each $iconos in logo, logo, logo {
+    .#{$iconos}-redes {
+        background-color: $fondo-nav;
+    }
+}
+/*bucle formulario seccion contacto*/
+@each $form in form, form, form, form {
+    .#{$form}-label {
+        font-weight:bolder;
+    }
+}
+
+/*bucle seccion instalaciones*/
+@each $i in caja, caja, caja {
+    .#{$i}-maquinas {
+        background-color: $fondo-nav;
+        border-color:transparent;
+        margin-top:0;
+        img {
+            width: ($w-100 - 70%) * 2;
+            margin:4vh;
+            margin-left:20%;
+            border-radius:20%
+        }
+        p {
+            font-size: 1.3em;
+            color:black;
+            font-family:'Dosis', sans-serif
+        }
+    }
+}
+
+/*bucle para h3 dónde estamos?*/
+@each $titulo in donde, donde, donde {
+    .#{$titulo}-estamos {
+        color: $fondo-footer;
+        padding:6vh;
+        letter-spacing:10px;
+        font-size:2.5em;
+        font-weight:bolder;
+        text-transform: uppercase;
+    }
+}
+

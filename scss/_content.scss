@@ -1,0 +1,385 @@
+* {
+    margin:0;
+    padding:0
+}
+body {
+    background-color: white;
+}
+h1 {
+    font-size:3em;
+    font-weight:bold
+}
+h4 {
+    font-family: $font-a;
+    font-size:0.7em;
+    background-color:black;
+    color:white;
+    letter-spacing:2px;
+    a {
+        text-decoration: none;
+        color:white
+    }
+}
+
+.carousel-inner {
+    height:700px
+}
+.carousel-item {
+    height:50%;
+    img {
+        width:100%;
+        height:700px;
+    }
+
+}
+.encabezado__tituloEncabezado {
+    margin-right:90%;
+    margin-bottom:80px;
+    width:60%;
+    font-size:2.3em;
+    font-family: 'Comic Neue', cursive;
+    color: whitesmoke;
+    font-weight: bold;
+    text-transform:uppercase
+}
+.tituloFoto2 {
+    font-family: 'Comic Neue', cursive;
+    color: #6a93b9;
+    margin-bottom:10%;
+    background-image:radial-gradient(white, transparent);
+    font-weight: bolder;
+    font-size:3em;
+}
+.tituloFoto3 {
+    font-family: 'Comic Neue', cursive;
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size:2.3em;
+    text-transform:uppercase
+}
+.textoEncabezado {
+    margin-right:70%
+}
+
+.nosotrosMision {
+    background-color:$fondo-nosotros;
+    color:white;
+    line-height: $fontSizeBig;
+    font-size:1.1em;
+    a {
+        text-decoration: none;
+    }
+}
+.nosotrosMision__titulo {
+    color:white;
+    font-family: 'Handlee', cursive;
+    font-size: $fontSizeBig
+}
+/*seccion productos*/
+.titulo-central {
+    padding:4vh;
+    font-family: 'Caveat Brush', cursive;
+    font-weight:400;
+    color:#022859;
+    font-size: 2.5em;
+}
+.tituloDonde {
+    color: #033E8C;
+    font-size:2em;
+    padding:10vh; 
+    margin-bottom:0;
+    text-transform: uppercase;
+    letter-spacing:1vh;
+    font-weight:bold;
+}
+.cajaVenta {
+    background-color: white;
+    padding:14vh;
+    .cajaImg {
+        background-color: white;
+        border-color:transparent
+    }
+    .cajaVenta__imgVenta {
+        width: $w-50; 
+        margin-left:22%;
+        padding:4vh;
+        border-style:solid;
+        border-color:#022859;
+        border-radius:1vh;
+        
+
+    }
+    .cajaVenta__titulos {
+        color:#022859;
+        background-color:white;
+        font-size: 1.5em;
+        font-family: 'Dosis', sans-serif;
+        margin-left:10%
+    }
+}
+.imgProducto {
+    margin-left: $w-25;
+    border-radius:50%;
+
+}
+.cajaGrande {
+    background-color:white;
+}
+.cajaProducto {
+    background-color:white;
+    border-color:transparent;
+    .cajaProducto__titulo {
+        color: #022859;
+        font-weight:bold;
+        font-size:1.6em
+    }
+    .cajaProducto__texto {
+        color: #022859;
+        font-size:1.2em
+    }
+}
+/*termina productos*/
+
+/*seccion instalaciones*/
+.textoInstalaciones {
+    font-family: $font-texto;
+    font-size:1.3em
+}
+.tituloMaquinas {
+    background-color: $fondo-nav;
+    padding:1vh;
+    margin-bottom:0;
+    color:white
+}
+.caja-maquinas {
+    background-color:white
+}
+
+/*seccion distribución*/
+.tituloCiudades {
+    padding:10vh;
+    text-transform: uppercase;
+    letter-spacing:1vh;
+    line-height:3.2em;
+    h2 {
+        color:#033E8C;
+        font-size:2.5em;
+    }
+    p {
+        letter-spacing:normal;
+        color:#033E8C;
+        font-size:1.3em;
+    }
+}
+.textoVehiculos {
+        font-family:'Dosis', sans-serif;
+        font-size:1.5em
+}
+
+.cajaCiudades {
+    background-color:white;
+}
+.ciudades {
+    border-color:transparent;
+    height:100%;
+    background-color:white;
+    img {
+        width:$w-75;
+        margin-left: 15%;
+        border-radius:50%;
+    }
+    h3 {
+        color:#022859
+    }
+}
+.cajaConsulta {
+    background-color:#022859;
+    padding:20vh 8vh 0vh 8vh;
+    height:600px;
+    color:white;
+    display:flex;
+    flex-direction:row;
+    .imgJugo img {
+        width:600px;
+        border-radius:50%;
+    }
+    .imgJugo .mojito {
+        width:600px;
+        height:300px
+    }
+    h3 {
+        color:white;
+        font-family:'Dosis', sans-serif;;
+        text-transform: uppercase;
+        font-weight:bold;
+        font-size: $fontSizeBig;
+        line-height:2em;
+    }
+    p {
+        font-size: 1.7em;
+        margin-top:2vh
+    }
+    .btn {
+        margin-top:4vh;
+    }
+}
+.camiones {
+    width: 50%
+}
+
+/*termina seccion distribucion*/
+
+/*seccion contacto*/
+.formulario {
+    background-color: transparent;
+    background-image:url('../imagenes/Background.png');
+    background-size:cover;
+    width: 100%;
+    padding:0vh 40vh 4vh 40vh;
+    margin-top:0;
+    .formulario__botonEnviar {
+        margin-left: 40%;
+        padding:2vh 2vh;
+        width:20%;
+        font-size:1.2em
+    }
+
+    textarea {
+        margin-left: ($w-100 - 50%) / 2 
+    }
+    label {
+        font-size:1.5em
+    }
+}
+/*termina seccion contacto*/
+
+/*seccion 404error*/
+.error {
+    background-color:$fondo-nav;
+    h1, h2 {
+        text-align:center;
+        font-size: 2.5em;
+        line-height:1.5em;
+        font-family: 'Handlee', cursive;
+    }
+    img {
+        width: 20vh;
+        margin-left:45%
+    }
+}
+.ayuda {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: $fondo-body;
+    img {
+        width: $w-100
+    }
+    .tituloAyuda {
+        font-family:'Handlee', cursive;
+        text-align:center;
+        font-size:3em;
+        line-height: 1.5em
+    }
+    .botonError {
+        background-color: $fondo-nosotros;
+        margin:2vh 0vh 2vh 36vh;
+        padding:3vh;
+        a {
+            color:lightgray;
+            text-decoration:none;
+            font-family:'Handlee', cursive;
+            text-transform:uppercase;
+            font-weight: bold;
+            font-size:1em
+        }
+    }
+}
+
+/*termina seccion 404error*/
+
+/*mobile first*/
+@media screen and (min-width:360px) and (max-width: 440px) {
+    .donde-estamos {
+        letter-spacing:5px;
+        font-size:1.5em;
+        padding:1vh
+    }
+}
+@media screen and (min-width:441px) and (max-width: 768px) {
+    .donde-estamos {
+        font-size:1.7em;
+    }
+
+}
+
+@media screen and (min-width:769px) and (max-width:991px) {
+    .donde-estamos {
+        font-size:1.8em
+    }
+}
+/*mobile instalaciones*/
+@media screen and (min-width:360px) and (max-width: 440px) {
+    .titulo-central {
+        font-size: 1.7em;
+        padding:3vh
+    }
+}
+/*mobile productos*/
+@media screen and (min-width:360px) and (max-width: 440px) {
+    .tituloDonde {
+        padding:8vh; 
+        letter-spacing:1vh;
+        font-size:1.5em
+    }
+    .cajaVenta__titulos {
+        text-align:center
+    }
+}
+/*mobile distribucion*/
+@media screen and (min-width:360px) and (max-width: 440px) {
+    .cajaConsulta {
+        line-height:4vh;
+        h3 {
+            font-size:1em
+        }
+        p {
+            font-size:1em
+        }
+    }
+}
+/*mobile contacto*/
+@media screen and (min-width:360px) and (max-width: 440px) {
+    h1 {
+        font-size:2em
+    }
+    .formulario {
+        padding:8vh;
+        .formulario__botonEnviar {
+            margin-left: 25%;
+            padding:4vh 2vh;
+            width:50%;
+            font-size:1em
+        }
+     textarea {
+        margin-left:0
+        }
+    }
+}
+@media screen and (min-width:441px) and (max-width: 768px) {
+    .formulario {
+        padding:8vh;
+        .formulario__botonEnviar {
+            margin-left: 25%;
+            padding:4vh 2vh;
+            width:50%;
+            font-size:1em
+        }
+     textarea {
+        margin-left:0
+        }
+    }
+}
+
+
+
+

@@ -1,0 +1,702 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2? family = Dosis & display = swap");
+@import url("https://fonts.googleapis.com/css2? family = Montserrat: wght @ 300 & display = swap");
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Handlee&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap");
+* {
+  margin: 0%;
+  padding: 0%; }
+
+/*bucle footer*/
+.logo-redes {
+  background-color: #0460D9; }
+
+.logo-redes {
+  background-color: #0460D9; }
+
+.logo-redes {
+  background-color: #0460D9; }
+
+/*bucle formulario seccion contacto*/
+.form-label {
+  font-weight: bolder; }
+
+.form-label {
+  font-weight: bolder; }
+
+.form-label {
+  font-weight: bolder; }
+
+.form-label {
+  font-weight: bolder; }
+
+/*bucle seccion instalaciones*/
+.caja-maquinas {
+  background-color: #0460D9;
+  border-color: transparent;
+  margin-top: 0; }
+  .caja-maquinas img {
+    width: 60%;
+    margin: 4vh;
+    margin-left: 20%;
+    border-radius: 20%; }
+  .caja-maquinas p {
+    font-size: 1.3em;
+    color: black;
+    font-family: 'Dosis', sans-serif; }
+
+.caja-maquinas {
+  background-color: #0460D9;
+  border-color: transparent;
+  margin-top: 0; }
+  .caja-maquinas img {
+    width: 60%;
+    margin: 4vh;
+    margin-left: 20%;
+    border-radius: 20%; }
+  .caja-maquinas p {
+    font-size: 1.3em;
+    color: black;
+    font-family: 'Dosis', sans-serif; }
+
+.caja-maquinas {
+  background-color: #0460D9;
+  border-color: transparent;
+  margin-top: 0; }
+  .caja-maquinas img {
+    width: 60%;
+    margin: 4vh;
+    margin-left: 20%;
+    border-radius: 20%; }
+  .caja-maquinas p {
+    font-size: 1.3em;
+    color: black;
+    font-family: 'Dosis', sans-serif; }
+
+/*bucle para h3 dónde estamos?*/
+.donde-estamos {
+  color: #033E8C;
+  padding: 6vh;
+  letter-spacing: 10px;
+  font-size: 2.5em;
+  font-weight: bolder;
+  text-transform: uppercase; }
+
+.donde-estamos {
+  color: #033E8C;
+  padding: 6vh;
+  letter-spacing: 10px;
+  font-size: 2.5em;
+  font-weight: bolder;
+  text-transform: uppercase; }
+
+.donde-estamos {
+  color: #033E8C;
+  padding: 6vh;
+  letter-spacing: 10px;
+  font-size: 2.5em;
+  font-weight: bolder;
+  text-transform: uppercase; }
+
+nav {
+  background-color: #022859;
+  height: 8vh; }
+  nav .navA .nav-item .nav-link {
+    color: white;
+    text-decoration: none;
+    font-family: 'Comic Neue', cursive;
+    font-size: 1.2em;
+    margin-left: 22px;
+    font-weight: 300;
+    text-transform: uppercase;
+    background: linear-gradient(red, red);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s; }
+    nav .navA .nav-item .nav-link .nav-link:hover, nav .navA .nav-item .nav-link .nav-link:focus {
+      background-size: 100% 2px; }
+
+#divMenu {
+  display: flex; }
+
+.logoMenu {
+  padding: 0vh 1vh 0vh 1vh;
+  width: 100%;
+  height: 114px;
+  background-color: #022859;
+  border-color: transparent; }
+
+.divLogo {
+  width: 12%; }
+  .divLogo img {
+    width: 100%;
+    margin-top: 15px; }
+
+.cajaNav__lista {
+  list-style: none;
+  font-family: 'Comic Neue', cursive;
+  font-size: 0.5em;
+  color: lightgray; }
+  .cajaNav__lista .cajaNav__hielosNav {
+    font-family: 'Comic Neue', cursive;
+    font-size: 3em;
+    font-weight: bold;
+    color: lightgray;
+    margin-top: 4px; }
+
+.cajaNav__info {
+  font-family: 'Comic Neue', cursive;
+  font-size: 1.7em;
+  color: lightgray; }
+  .cajaNav__info span {
+    font-size: 2.5vh;
+    margin-right: 1vh;
+    margin-bottom: 2vh; }
+
+.carousel-inner {
+  width: 100%;
+  height: 600px; }
+
+.boton {
+  background-color: #022859;
+  border-color: lightgray;
+  padding: 1vh; }
+  .boton a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.8em; }
+
+/*Mobile first*/
+@media screen and (min-width: 360px) and (max-width: 440px) {
+  .imgHome {
+    width: 30%; }
+  nav {
+    height: 40vh; }
+    nav .navA {
+      background-color: #0460D9;
+      z-index: 1;
+      width: 100%;
+      padding: 5vh 24vh 5vh 24vh; }
+      nav .navA .nav-item .nav-link {
+        font-size: 0.5em; }
+  #divMenu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; }
+  .navA .nav-item .nav-link {
+    font-size: 0.5em; }
+  .cajaNav__hielosNav {
+    font-size: 0.9em;
+    font-weight: bold; }
+  .boton {
+    display: none; }
+  .carousel-inner {
+    height: 10%; } }
+
+@media screen and (min-width: 441px) and (max-width: 768px) {
+  nav {
+    height: 50vh; }
+  #divMenu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; }
+  .imgHome {
+    width: 20%; }
+  .cajaNav__hielosNav {
+    font-size: 1em; }
+  .titulo__quienes {
+    padding: 1vh; }
+  .carousel-inner {
+    height: 40%; } }
+
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  nav {
+    height: 34vh; }
+  .imgHome {
+    width: 56%; }
+  #divMenu {
+    display: grid;
+    grid-template-columns: 600px 400px; }
+  .titulo__quienes {
+    padding: 2vh; }
+  .carousel-inner {
+    height: 40%; } }
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  nav {
+    height: 28vh; }
+    nav .navA .nav-item .nav-link {
+      font-size: 1em;
+      margin-left: 5px;
+      margin-right: 50px;
+      padding-right: 50%; }
+  .cajaNav__hielosNav {
+    font-size: 1em; } }
+
+@media screen and (min-width: 1201px) {
+  nav {
+    height: 17vh; }
+    nav .navA .nav-item .nav-link {
+      font-size: 1.2em; }
+  .imgHome {
+    width: 77%;
+    margin-top: 1vh; }
+  .cajaNav__hielosNav {
+    font-size: 1.4em; }
+  .boton {
+    padding: 0.5vh; } }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: white; }
+
+h1 {
+  font-size: 3em;
+  font-weight: bold; }
+
+h4 {
+  font-family: monospace;
+  font-size: 0.7em;
+  background-color: black;
+  color: white;
+  letter-spacing: 2px; }
+  h4 a {
+    text-decoration: none;
+    color: white; }
+
+.carousel-inner {
+  height: 700px; }
+
+.carousel-item {
+  height: 50%; }
+  .carousel-item img {
+    width: 100%;
+    height: 700px; }
+
+.encabezado__tituloEncabezado {
+  margin-right: 90%;
+  margin-bottom: 80px;
+  width: 60%;
+  font-size: 2.3em;
+  font-family: 'Comic Neue', cursive;
+  color: whitesmoke;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.tituloFoto2 {
+  font-family: 'Comic Neue', cursive;
+  color: #6a93b9;
+  margin-bottom: 10%;
+  background-image: radial-gradient(white, transparent);
+  font-weight: bolder;
+  font-size: 3em; }
+
+.tituloFoto3 {
+  font-family: 'Comic Neue', cursive;
+  color: whitesmoke;
+  font-weight: bolder;
+  font-size: 2.3em;
+  text-transform: uppercase; }
+
+.textoEncabezado {
+  margin-right: 70%; }
+
+.nosotrosMision {
+  background-color: #022859;
+  color: white;
+  line-height: 2em;
+  font-size: 1.1em; }
+  .nosotrosMision a {
+    text-decoration: none; }
+
+.nosotrosMision__titulo {
+  color: white;
+  font-family: 'Handlee', cursive;
+  font-size: 2em; }
+
+/*seccion productos*/
+.titulo-central {
+  padding: 4vh;
+  font-family: 'Caveat Brush', cursive;
+  font-weight: 400;
+  color: #022859;
+  font-size: 2.5em; }
+
+.tituloDonde {
+  color: #033E8C;
+  font-size: 2em;
+  padding: 10vh;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  letter-spacing: 1vh;
+  font-weight: bold; }
+
+.cajaVenta {
+  background-color: white;
+  padding: 14vh; }
+  .cajaVenta .cajaImg {
+    background-color: white;
+    border-color: transparent; }
+  .cajaVenta .cajaVenta__imgVenta {
+    width: 50%;
+    margin-left: 22%;
+    padding: 4vh;
+    border-style: solid;
+    border-color: #022859;
+    border-radius: 1vh; }
+  .cajaVenta .cajaVenta__titulos {
+    color: #022859;
+    background-color: white;
+    font-size: 1.5em;
+    font-family: 'Dosis', sans-serif;
+    margin-left: 10%; }
+
+.imgProducto {
+  margin-left: 25%;
+  border-radius: 50%; }
+
+.cajaGrande {
+  background-color: white; }
+
+.cajaProducto {
+  background-color: white;
+  border-color: transparent; }
+  .cajaProducto .cajaProducto__titulo {
+    color: #022859;
+    font-weight: bold;
+    font-size: 1.6em; }
+  .cajaProducto .cajaProducto__texto {
+    color: #022859;
+    font-size: 1.2em; }
+
+/*termina productos*/
+/*seccion instalaciones*/
+.textoInstalaciones {
+  font-family: "Dosis", sans-serif;
+  font-size: 1.3em; }
+
+.tituloMaquinas {
+  background-color: #0460D9;
+  padding: 1vh;
+  margin-bottom: 0;
+  color: white; }
+
+.caja-maquinas {
+  background-color: white; }
+
+/*seccion distribución*/
+.tituloCiudades {
+  padding: 10vh;
+  text-transform: uppercase;
+  letter-spacing: 1vh;
+  line-height: 3.2em; }
+  .tituloCiudades h2 {
+    color: #033E8C;
+    font-size: 2.5em; }
+  .tituloCiudades p {
+    letter-spacing: normal;
+    color: #033E8C;
+    font-size: 1.3em; }
+
+.textoVehiculos {
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.5em; }
+
+.cajaCiudades {
+  background-color: white; }
+
+.ciudades {
+  border-color: transparent;
+  height: 100%;
+  background-color: white; }
+  .ciudades img {
+    width: 75%;
+    margin-left: 15%;
+    border-radius: 50%; }
+  .ciudades h3 {
+    color: #022859; }
+
+.cajaConsulta {
+  background-color: #022859;
+  padding: 20vh 8vh 0vh 8vh;
+  height: 600px;
+  color: white;
+  display: flex;
+  flex-direction: row; }
+  .cajaConsulta .imgJugo img {
+    width: 600px;
+    border-radius: 50%; }
+  .cajaConsulta .imgJugo .mojito {
+    width: 600px;
+    height: 300px; }
+  .cajaConsulta h3 {
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2em;
+    line-height: 2em; }
+  .cajaConsulta p {
+    font-size: 1.7em;
+    margin-top: 2vh; }
+  .cajaConsulta .btn {
+    margin-top: 4vh; }
+
+.camiones {
+  width: 50%; }
+
+/*termina seccion distribucion*/
+/*seccion contacto*/
+.formulario {
+  background-color: transparent;
+  background-image: url("../imagenes/Background.png");
+  background-size: cover;
+  width: 100%;
+  padding: 0vh 40vh 4vh 40vh;
+  margin-top: 0; }
+  .formulario .formulario__botonEnviar {
+    margin-left: 40%;
+    padding: 2vh 2vh;
+    width: 20%;
+    font-size: 1.2em; }
+  .formulario textarea {
+    margin-left: 25%; }
+  .formulario label {
+    font-size: 1.5em; }
+
+/*termina seccion contacto*/
+/*seccion 404error*/
+.error {
+  background-color: #0460D9; }
+  .error h1, .error h2 {
+    text-align: center;
+    font-size: 2.5em;
+    line-height: 1.5em;
+    font-family: 'Handlee', cursive; }
+  .error img {
+    width: 20vh;
+    margin-left: 45%; }
+
+.ayuda {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #A3BFD9; }
+  .ayuda img {
+    width: 100%; }
+  .ayuda .tituloAyuda {
+    font-family: 'Handlee', cursive;
+    text-align: center;
+    font-size: 3em;
+    line-height: 1.5em; }
+  .ayuda .botonError {
+    background-color: #022859;
+    margin: 2vh 0vh 2vh 36vh;
+    padding: 3vh; }
+    .ayuda .botonError a {
+      color: lightgray;
+      text-decoration: none;
+      font-family: 'Handlee', cursive;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 1em; }
+
+/*termina seccion 404error*/
+/*mobile first*/
+@media screen and (min-width: 360px) and (max-width: 440px) {
+  .donde-estamos {
+    letter-spacing: 5px;
+    font-size: 1.5em;
+    padding: 1vh; } }
+
+@media screen and (min-width: 441px) and (max-width: 768px) {
+  .donde-estamos {
+    font-size: 1.7em; } }
+
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  .donde-estamos {
+    font-size: 1.8em; } }
+
+/*mobile instalaciones*/
+@media screen and (min-width: 360px) and (max-width: 440px) {
+  .titulo-central {
+    font-size: 1.7em;
+    padding: 3vh; } }
+
+/*mobile productos*/
+@media screen and (min-width: 360px) and (max-width: 440px) {
+  .tituloDonde {
+    padding: 8vh;
+    letter-spacing: 1vh;
+    font-size: 1.5em; }
+  .cajaVenta__titulos {
+    text-align: center; } }
+
+/*mobile distribucion*/
+@media screen and (min-width: 360px) and (max-width: 440px) {
+  .cajaConsulta {
+    line-height: 4vh; }
+    .cajaConsulta h3 {
+      font-size: 1em; }
+    .cajaConsulta p {
+      font-size: 1em; } }
+
+/*mobile contacto*/
+@media screen and (min-width: 360px) and (max-width: 440px) {
+  h1 {
+    font-size: 2em; }
+  .formulario {
+    padding: 8vh; }
+    .formulario .formulario__botonEnviar {
+      margin-left: 25%;
+      padding: 4vh 2vh;
+      width: 50%;
+      font-size: 1em; }
+    .formulario textarea {
+      margin-left: 0; } }
+
+@media screen and (min-width: 441px) and (max-width: 768px) {
+  .formulario {
+    padding: 8vh; }
+    .formulario .formulario__botonEnviar {
+      margin-left: 25%;
+      padding: 4vh 2vh;
+      width: 50%;
+      font-size: 1em; }
+    .formulario textarea {
+      margin-left: 0; } }
+
+.imgFooter {
+  width: 20%;
+  margin-left: 30%; }
+
+.logo-redes {
+  padding: 1vh;
+  background-color: #124c81;
+  border-radius: 2vh;
+  width: 8vh;
+  margin-top: 2em;
+  margin-left: 46%; }
+
+.logo-redes:hover {
+  transform: scale(1.1, 1.1); }
+
+.logosFooter {
+  display: flex;
+  flex-direction: column; }
+
+#footerDiv1, #footerDiv2, #footerDiv3 {
+  background-color: #022859;
+  color: lightgray;
+  padding: 5vh 1vh 0vh 1vh;
+  border-radius: 0%;
+  border-color: #022859;
+  height: 400px; }
+  #footerDiv1 p span, #footerDiv2 p span, #footerDiv3 p span {
+    font-size: 1.6em;
+    margin-right: 1vh; }
+
+#footerDiv2 ul li {
+  background-color: #022859;
+  border-color: transparent; }
+  #footerDiv2 ul li a {
+    text-decoration: none;
+    color: lightgray; }
+
+#footerDiv2 h4 {
+  font-size: 1.7em;
+  font-family: sans-serif;
+  font-weight: bold; }
+
+#footerDiv3 h4 {
+  font-size: 1.7em;
+  background-color: #022859;
+  font-family: sans-serif;
+  font-weight: bold;
+  letter-spacing: normal;
+  margin-top: 14px; }
+
+.menuFooter {
+  background-color: #022859;
+  font-size: 1em;
+  font-family: "Dosis", sans-serif;
+  letter-spacing: normal; }
+
+.pie__contactoTitle {
+  color: #033E8C;
+  padding: 2vh;
+  letter-spacing: 10px;
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+h5 {
+  font-family: 'Dosis', sans-serif;
+  font-size: 0.7em;
+  background-color: black;
+  color: white;
+  letter-spacing: 0; }
+  h5 a {
+    text-decoration: none;
+    color: white; }
+
+/*mobile first*/
+@media screen and (min-width: 360px) and (max-width: 440px) {
+  .logo-redes {
+    margin-right: 2em;
+    margin-left: 2.2em;
+    margin-top: 3em;
+    margin-bottom: 3em; }
+  .pie__contactoTitle {
+    padding: 1vh;
+    letter-spacing: 5px;
+    font-size: 1.3em; }
+  .imgFooter {
+    width: 20%;
+    margin-left: 10%; }
+  h4 {
+    font-size: 0.5em; } }
+
+@media screen and (min-width: 441px) and (max-width: 768px) {
+  .pie__contactoTitle {
+    font-size: 1.3em;
+    letter-spacing: 3px; }
+  .imgFooter {
+    width: 20%;
+    margin-left: 0; }
+  .logosFooter {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+  .logo-redes {
+    margin-right: 1em;
+    margin-left: 5em;
+    margin-top: 3em;
+    margin-bottom: 3em; } }
+
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  .logosFooter {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+  .logo-redes {
+    margin-right: 1em;
+    margin-left: 5em;
+    margin-top: 3em;
+    margin-bottom: 3em; }
+  .imgFooter {
+    margin-left: 20%;
+    width: 30%; }
+  #footerDiv1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .logo-redes {
+    margin-right: 1em;
+    margin-left: 2em;
+    margin-top: 8em;
+    margin-bottom: 2em; } }
