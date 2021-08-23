@@ -14,5 +14,13 @@
     "nodemon": "^2.0.12"
   },
   "dependencies": {},
-  "description": ""
+  "description": "Proyecto web de fábrica de hielo",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ValentinaVaccarezza/fabricaDeHielo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ValentinaVaccarezza/fabricaDeHielo/issues"
+  },
+  "homepage": "https://github.com/ValentinaVaccarezza/fabricaDeHielo#readme"
 }
