@@ -20,7 +20,7 @@
 #footerDiv1, #footerDiv2, #footerDiv3 {
     background-color: $fondo-nosotros;
     color:lightgray;
-    padding:5vh 4vh 0vh 4vh;
+    padding:12vh 4vh 2vh 4vh;
     border-radius: 0%;
     border-color:#022859;
     height:500px;
@@ -55,14 +55,7 @@
     font-family: $font-texto;
     letter-spacing:normal;
 }
-.pie__contactoTitle {
-        color: $fondo-footer;
-        padding:2vh;
-        letter-spacing:10px;
-        font-size:2em;
-        font-weight:bold;
-        text-transform: uppercase;
-}
+
 h5 {
     font-family:'Dosis', sans-serif;;
     font-size:0.7em;
@@ -80,69 +73,112 @@ h5 {
 @media screen and (min-width:360px) and (max-width: 440px) {
     .logo-redes {
         margin-right:2em;
-        margin-left:2.2em;
+        margin-left:3.5em;
         margin-top:3em;
-        margin-bottom:3em
+        margin-bottom:0
     }
-    .pie__contactoTitle {
-        padding:1vh;
-        letter-spacing:5px;
-        font-size:1.3em
-    }
+    
     .imgFooter {
-        width:20%;
+        width:24%;
         margin-left:10%;
+        margin-top:14%;
+        height:50%;
+    }
+    .textoFooter {
+        margin-top:10%;
     }
     h4 {
         font-size:0.5em
     }
-}
-@media screen and (min-width:441px) and (max-width: 768px) {
-    .pie__contactoTitle {
-        font-size:1.3em; 
-        letter-spacing:3px
+    #footerDiv1, #footerDiv2, #footerDiv3 {
+        padding:0;
+        height:260px;
     }
-    .imgFooter {
-        width:20%;
-        margin-left:0;
+    #footerDiv2 {
+        margin-bottom:10px;
+    }
+    #footerDiv1 {
+        display:flex;
+        flex-direction:row;
     }
     .logosFooter {
-        display:grid;
-        grid-template-columns: repeat(3,1fr);
+        display: $display-flex;
+        flex-direction:row;
+    }
+}
+@media screen and (min-width:441px) and (max-width: 768px) {
+    .imgFooter {
+        width:24%;
+        margin-left:10%;
+        margin-top:14%;
+        height:50%;
+    }
+    .logosFooter {
+        display: $display-flex;
+        flex-direction:row;
     }
     .logo-redes {
-        margin-right:1em;
-        margin-left:5em;
+        margin-right:2em;
+        margin-left:3.5em;
         margin-top:3em;
-        margin-bottom:3em
+        margin-bottom:0
+    }
+    #footerDiv1, #footerDiv2, #footerDiv3 {
+        padding:0;
+        height:260px;
+    }
+    #footerDiv2 {
+        margin-bottom:10px;
+    }
+    #footerDiv1 {
+        display:flex;
+        flex-direction:row;
+    }
+    .textoFooter {
+        margin-top:10%;
     }
 }
 @media screen and (min-width:769px) and (max-width:991px) {
     .logosFooter {
-        display:grid;
-        grid-template-columns: repeat(3,1fr);
+        display: $display-flex;
+        flex-direction:row;
     }
     .logo-redes {
-        margin-right:1em;
-        margin-left:5em;
+        margin-right:2em;
+        margin-left:10em;
         margin-top:3em;
-        margin-bottom:3em
+        margin-bottom:0;
+        width:10vh;
     }
     .imgFooter {
         margin-left:20%;
         width:30%
     }
+    #footerDiv1, #footerDiv2, #footerDiv3 {
+        padding:0;
+        height:220px;
+    }
     #footerDiv1 {
         display:grid;
         grid-template-columns: repeat(2,1fr);
+    }
+    #footerDiv2 {
+        margin-bottom:10px;
     }
 }
 
 @media screen and (min-width:992px) and (max-width:1200px) {
     .logo-redes {
-        margin-right:1em;
-        margin-left:2em;
-        margin-top:8em;
+        margin-right:0em;
+        margin-left:10em;
+        margin-top:3em;
         margin-bottom:2em
     }
+    #footerDiv2 h4 {
+        font-size:1.4em;
+        font-family:sans-serif;
+        font-weight:bold
+    }
+    
+
 }

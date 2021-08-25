@@ -108,31 +108,33 @@ nav {
     font-family: 'Comic Neue', cursive;
     font-size: 1.2em;
     margin-left: 22px;
+    margin-top: 20px;
     font-weight: 300;
     text-transform: uppercase;
-    background: linear-gradient(red, red);
+    background: linear-gradient(currentColor, currentColor);
     background-position: 0% 100%;
     background-repeat: no-repeat;
     background-size: 0% 2px;
     transition: background-size .3s; }
-    nav .navA .nav-item .nav-link .nav-link:hover, nav .navA .nav-item .nav-link .nav-link:focus {
-      background-size: 100% 2px; }
+  nav .nav-link:hover, nav .nav-link:focus {
+    background-size: 100% 2px; }
 
 #divMenu {
   display: flex; }
 
-.logoMenu {
-  padding: 0vh 1vh 0vh 1vh;
-  width: 100%;
-  height: 114px;
-  background-color: #022859;
-  border-color: transparent; }
-
+/*.logoMenu {
+    padding:0vh 1vh 0vh 1vh;
+    width:100%;
+    height:114px;
+    background-color: #022859;
+    border-color: transparent;
+}*/
 .divLogo {
   width: 12%; }
   .divLogo img {
     width: 100%;
-    margin-top: 15px; }
+    margin-top: 14px;
+    margin-bottom: 0px; }
 
 .cajaNav__lista {
   list-style: none;
@@ -171,40 +173,57 @@ nav {
 
 /*Mobile first*/
 @media screen and (min-width: 360px) and (max-width: 440px) {
-  .imgHome {
-    width: 30%; }
   nav {
-    height: 40vh; }
+    height: 50vh; }
     nav .navA {
-      background-color: #0460D9;
+      background-color: #022859;
       z-index: 1;
+      position: absolute;
       width: 100%;
-      padding: 5vh 24vh 5vh 24vh; }
+      height: 400px;
+      padding: 10vh 30vh 5vh 24vh; }
       nav .navA .nav-item .nav-link {
-        font-size: 0.5em; }
+        font-size: 1em; }
+  .divLogo {
+    width: 50%;
+    margin: 0; }
+    .divLogo img {
+      margin-top: 0px; }
   #divMenu {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap; }
+    flex-wrap: nowrap;
+    padding: 0 0 0 1vh;
+    margin: 0; }
   .navA .nav-item .nav-link {
     font-size: 0.5em; }
   .cajaNav__hielosNav {
     font-size: 0.9em;
     font-weight: bold; }
-  .boton {
-    display: none; }
   .carousel-inner {
-    height: 10%; } }
+    height: 100px; } }
 
 @media screen and (min-width: 441px) and (max-width: 768px) {
   nav {
     height: 50vh; }
+    nav .navA {
+      background-color: #022859;
+      z-index: 1;
+      position: absolute;
+      width: 100%;
+      height: 400px;
+      padding: 10vh 30vh 5vh 24vh; }
+      nav .navA .nav-item .nav-link {
+        font-size: 1em; }
+  .divLogo {
+    width: 50%;
+    margin: 0; }
+    .divLogo img {
+      margin-top: 0px; }
   #divMenu {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap; }
-  .imgHome {
-    width: 20%; }
   .cajaNav__hielosNav {
     font-size: 1em; }
   .titulo__quienes {
@@ -214,12 +233,30 @@ nav {
 
 @media screen and (min-width: 769px) and (max-width: 991px) {
   nav {
-    height: 34vh; }
-  .imgHome {
-    width: 56%; }
+    height: 40vh; }
+    nav .navA {
+      background-color: #022859;
+      z-index: 1;
+      position: absolute;
+      width: 100%;
+      height: 400px;
+      padding: 10vh 20vh 5vh 24vh; }
+      nav .navA .nav-item .nav-link {
+        font-size: 1.3em;
+        margin-left: 30%; }
+  .divLogo {
+    width: 10%;
+    margin: 0; }
+    .divLogo img {
+      margin-top: 0px;
+      margin-left: 10%;
+      width: 100%; }
+  .cajaNav {
+    margin-right: 20%; }
   #divMenu {
-    display: grid;
-    grid-template-columns: 600px 400px; }
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; }
   .titulo__quienes {
     padding: 2vh; }
   .carousel-inner {
@@ -233,6 +270,12 @@ nav {
       margin-left: 5px;
       margin-right: 50px;
       padding-right: 50%; }
+  .divLogo {
+    width: 30%; }
+    .divLogo img {
+      margin-top: 0px;
+      margin-left: 10%;
+      width: 100%; }
   .cajaNav__hielosNav {
     font-size: 1em; } }
 
@@ -241,13 +284,19 @@ nav {
     height: 17vh; }
     nav .navA .nav-item .nav-link {
       font-size: 1.2em; }
-  .imgHome {
-    width: 77%;
-    margin-top: 1vh; }
+  #divMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .divLogo img {
+    width: 100%;
+    margin-left: 2vh;
+    margin-bottom: 1vh; }
+  .cajaNav {
+    margin-right: 20%;
+    margin-top: 2vh; }
   .cajaNav__hielosNav {
-    font-size: 1.4em; }
-  .boton {
-    padding: 0.5vh; } }
+    font-size: 1.4em; } }
 
 * {
   margin: 0;
@@ -292,16 +341,18 @@ h4 {
 .tituloFoto2 {
   font-family: 'Comic Neue', cursive;
   color: #6a93b9;
-  margin-bottom: 10%;
+  margin-bottom: 20%;
   background-image: radial-gradient(white, transparent);
   font-weight: bolder;
   font-size: 3em; }
 
 .tituloFoto3 {
   font-family: 'Comic Neue', cursive;
-  color: whitesmoke;
+  color: #385774;
   font-weight: bolder;
+  margin-bottom: 20%;
   font-size: 2.3em;
+  background-image: radial-gradient(#A3BFD9, transparent);
   text-transform: uppercase; }
 
 .textoEncabezado {
@@ -347,9 +398,10 @@ h4 {
     width: 50%;
     margin-left: 22%;
     padding: 4vh;
-    border-style: solid;
-    border-color: #022859;
-    border-radius: 1vh; }
+    /*border-style:solid;
+        border-color:#022859;*/
+    border-radius: 1vh;
+    box-shadow: 0 0.7em 0.5em #033E8C; }
   .cajaVenta .cajaVenta__titulos {
     color: #022859;
     background-color: white;
@@ -359,7 +411,11 @@ h4 {
 
 .imgProducto {
   margin-left: 25%;
-  border-radius: 50%; }
+  border-radius: 50%;
+  box-shadow: 0 0 1em #022859; }
+
+.imgProducto:hover {
+  transform: scale(1.02, 1.02); }
 
 .cajaGrande {
   background-color: white; }
@@ -382,13 +438,16 @@ h4 {
   font-size: 1.3em; }
 
 .tituloMaquinas {
-  background-color: #0460D9;
-  padding: 1vh;
+  color: #033E8C;
+  padding: 3vh;
   margin-bottom: 0;
-  color: white; }
+  font-size: 'Comic Neue', cursive;
+  font-size: 3em; }
 
 .caja-maquinas {
   background-color: white; }
+  .caja-maquinas img {
+    box-shadow: 0 0 1em #0d0d47; }
 
 /*seccion distribución*/
 .tituloCiudades {
@@ -406,7 +465,8 @@ h4 {
 
 .textoVehiculos {
   font-family: 'Dosis', sans-serif;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  margin-left: 3vh; }
 
 .cajaCiudades {
   background-color: white; }
@@ -418,7 +478,10 @@ h4 {
   .ciudades img {
     width: 75%;
     margin-left: 15%;
-    border-radius: 50%; }
+    border-radius: 50%;
+    box-shadow: 0 0 2em black; }
+  .ciudades img:hover {
+    transform: scale(1.02, 1.02); }
   .ciudades h3 {
     color: #022859; }
 
@@ -449,7 +512,13 @@ h4 {
     margin-top: 4vh; }
 
 .camiones {
-  width: 50%; }
+  width: 100%;
+  box-shadow: 1em 0em 1em gray; }
+
+.distribucion {
+  display: flex;
+  flex-direction: row;
+  padding: 4vh; }
 
 /*termina seccion distribucion*/
 /*seccion contacto*/
@@ -468,7 +537,7 @@ h4 {
   .formulario textarea {
     margin-left: 25%; }
   .formulario label {
-    font-size: 1.5em; }
+    font-size: 1.3em; }
 
 /*termina seccion contacto*/
 /*seccion 404error*/
@@ -512,15 +581,74 @@ h4 {
   .donde-estamos {
     letter-spacing: 5px;
     font-size: 1.5em;
-    padding: 1vh; } }
+    padding: 1vh; }
+  .carousel-inner {
+    height: 300px;
+    z-index: 0;
+    position: relative; }
+  .carousel-item img {
+    width: 100px;
+    height: 300px; }
+  .encabezado__tituloEncabezado {
+    margin-right: 90%;
+    margin-bottom: -6%;
+    width: 60%;
+    font-size: 1.2em;
+    font-weight: 400;
+    border-radius: 50%;
+    padding: 10% 10% 10% 10%; }
+  .tituloMaquinas {
+    font-size: 1.8em; }
+  .tituloFoto2 {
+    font-family: 'Comic Neue', cursive;
+    color: #33618d;
+    margin-bottom: 6%;
+    background-image: radial-gradient(white, transparent);
+    border-radius: 10%;
+    font-weight: bolder;
+    font-size: 1.7em; } }
+
+.tituloFoto3 {
+  margin-bottom: 2%;
+  font-size: 1.7em;
+  background-image: none;
+  color: white;
+  text-transform: uppercase; }
 
 @media screen and (min-width: 441px) and (max-width: 768px) {
   .donde-estamos {
+    font-size: 1.7em; }
+  .carousel-inner {
+    z-index: 0;
+    height: 300px;
+    position: relative; }
+  .carousel-item img {
+    width: 100px;
+    height: 300px; }
+  .encabezado__tituloEncabezado {
+    margin-right: 90%;
+    margin-bottom: -6%;
+    width: 60%;
+    font-size: 1.2em;
+    font-weight: 400;
+    border-radius: 50%;
+    padding: 10% 10% 10% 10%; }
+  .tituloFoto2 {
+    font-family: 'Comic Neue', cursive;
+    color: #33618d;
+    margin-bottom: 6%;
+    background-image: radial-gradient(white, transparent);
+    border-radius: 10%;
+    font-weight: bolder;
     font-size: 1.7em; } }
 
 @media screen and (min-width: 769px) and (max-width: 991px) {
   .donde-estamos {
-    font-size: 1.8em; } }
+    font-size: 1.8em; }
+  .carousel-inner {
+    z-index: 0;
+    height: 400px;
+    position: relative; } }
 
 /*mobile instalaciones*/
 @media screen and (min-width: 360px) and (max-width: 440px) {
@@ -558,7 +686,9 @@ h4 {
       width: 50%;
       font-size: 1em; }
     .formulario textarea {
-      margin-left: 0; } }
+      margin-left: 0; }
+    .formulario label {
+      font-size: 1em; } }
 
 @media screen and (min-width: 441px) and (max-width: 768px) {
   .formulario {
@@ -570,6 +700,15 @@ h4 {
       font-size: 1em; }
     .formulario textarea {
       margin-left: 0; } }
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .formulario label {
+    font-size: 1em; }
+  .formulario .formulario__botonEnviar {
+    margin-left: 25%;
+    padding: 2vh 2vh;
+    width: 50%;
+    font-size: 1em; } }
 
 .imgFooter {
   width: 20%;
@@ -593,7 +732,7 @@ h4 {
 #footerDiv1, #footerDiv2, #footerDiv3 {
   background-color: #022859;
   color: lightgray;
-  padding: 5vh 4vh 0vh 4vh;
+  padding: 12vh 4vh 2vh 4vh;
   border-radius: 0%;
   border-color: #022859;
   height: 500px; }
@@ -627,14 +766,6 @@ h4 {
   font-family: "Dosis", sans-serif;
   letter-spacing: normal; }
 
-.pie__contactoTitle {
-  color: #033E8C;
-  padding: 2vh;
-  letter-spacing: 10px;
-  font-size: 2em;
-  font-weight: bold;
-  text-transform: uppercase; }
-
 h5 {
   font-family: 'Dosis', sans-serif;
   font-size: 0.7em;
@@ -649,54 +780,84 @@ h5 {
 @media screen and (min-width: 360px) and (max-width: 440px) {
   .logo-redes {
     margin-right: 2em;
-    margin-left: 2.2em;
+    margin-left: 3.5em;
     margin-top: 3em;
-    margin-bottom: 3em; }
-  .pie__contactoTitle {
-    padding: 1vh;
-    letter-spacing: 5px;
-    font-size: 1.3em; }
+    margin-bottom: 0; }
   .imgFooter {
-    width: 20%;
-    margin-left: 10%; }
+    width: 24%;
+    margin-left: 10%;
+    margin-top: 14%;
+    height: 50%; }
+  .textoFooter {
+    margin-top: 10%; }
   h4 {
-    font-size: 0.5em; } }
+    font-size: 0.5em; }
+  #footerDiv1, #footerDiv2, #footerDiv3 {
+    padding: 0;
+    height: 260px; }
+  #footerDiv2 {
+    margin-bottom: 10px; }
+  #footerDiv1 {
+    display: flex;
+    flex-direction: row; }
+  .logosFooter {
+    display: flex;
+    flex-direction: row; } }
 
 @media screen and (min-width: 441px) and (max-width: 768px) {
-  .pie__contactoTitle {
-    font-size: 1.3em;
-    letter-spacing: 3px; }
   .imgFooter {
-    width: 20%;
-    margin-left: 0; }
+    width: 24%;
+    margin-left: 10%;
+    margin-top: 14%;
+    height: 50%; }
   .logosFooter {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); }
+    display: flex;
+    flex-direction: row; }
   .logo-redes {
-    margin-right: 1em;
-    margin-left: 5em;
+    margin-right: 2em;
+    margin-left: 3.5em;
     margin-top: 3em;
-    margin-bottom: 3em; } }
+    margin-bottom: 0; }
+  #footerDiv1, #footerDiv2, #footerDiv3 {
+    padding: 0;
+    height: 260px; }
+  #footerDiv2 {
+    margin-bottom: 10px; }
+  #footerDiv1 {
+    display: flex;
+    flex-direction: row; }
+  .textoFooter {
+    margin-top: 10%; } }
 
 @media screen and (min-width: 769px) and (max-width: 991px) {
   .logosFooter {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); }
+    display: flex;
+    flex-direction: row; }
   .logo-redes {
-    margin-right: 1em;
-    margin-left: 5em;
+    margin-right: 2em;
+    margin-left: 10em;
     margin-top: 3em;
-    margin-bottom: 3em; }
+    margin-bottom: 0;
+    width: 10vh; }
   .imgFooter {
     margin-left: 20%;
     width: 30%; }
+  #footerDiv1, #footerDiv2, #footerDiv3 {
+    padding: 0;
+    height: 220px; }
   #footerDiv1 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  #footerDiv2 {
+    margin-bottom: 10px; } }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .logo-redes {
-    margin-right: 1em;
-    margin-left: 2em;
-    margin-top: 8em;
-    margin-bottom: 2em; } }
+    margin-right: 0em;
+    margin-left: 10em;
+    margin-top: 3em;
+    margin-bottom: 2em; }
+  #footerDiv2 h4 {
+    font-size: 1.4em;
+    font-family: sans-serif;
+    font-weight: bold; } }
