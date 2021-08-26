@@ -57,14 +57,18 @@
 }
 
 h5 {
-    font-family:'Dosis', sans-serif;;
+    font-family:'Comic Neue', cursive;
     font-size:0.7em;
-    background-color:black;
+    background-color:rgb(32, 56, 100);
     color:white;
-    letter-spacing:0;
+    letter-spacing:1px;
     a {
         text-decoration: none;
-        color:white
+        color:white;
+    }
+    a:hover {
+        color:rgb(143, 141, 141);
+        font-weight:bold;
     }
 }
 
@@ -95,7 +99,7 @@ h5 {
         height:260px;
     }
     #footerDiv2 {
-        margin-bottom:10px;
+        height:300px;
     }
     #footerDiv1 {
         display:flex;
@@ -128,7 +132,7 @@ h5 {
         height:260px;
     }
     #footerDiv2 {
-        margin-bottom:10px;
+        height:300px;
     }
     #footerDiv1 {
         display:flex;
@@ -163,21 +167,32 @@ h5 {
         grid-template-columns: repeat(2,1fr);
     }
     #footerDiv2 {
-        margin-bottom:10px;
+        height:300px;
     }
 }
 
 @media screen and (min-width:992px) and (max-width:1200px) {
     .logo-redes {
         margin-right:0em;
-        margin-left:10em;
-        margin-top:3em;
-        margin-bottom:2em
+        margin-left:11em;
+        margin-top:1em;
+        margin-bottom:1em
     }
-    #footerDiv2 h4 {
-        font-size:1.4em;
-        font-family:sans-serif;
-        font-weight:bold
+    #footerDiv2 {
+        padding-left:0;
+        padding-right:0;
+        h4 {
+            font-size:1.4em;
+            font-family:sans-serif;
+            font-weight:bold
+        }
+        .list-group .list-group-item a {
+            font-size:1em;
+        }
+    }
+    #footerDiv1, #footerDiv2, #footerDiv3 {
+        height:400px;
+        border-color: $fondo-nosotros
     }
     
 
