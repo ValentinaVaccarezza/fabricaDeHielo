@@ -35,7 +35,7 @@
               <div class="card-body">
                 <ul class="cajaNav__lista">
                   <li class="cajaNav__hielosNav">HIELOS DZ</li>
-                  <li class="cajaNav__info"><span class="icon-mobile"></span>(02324) 15539421</li>
+                  <li class="cajaNav__info"><span class="icon-mobile"></span>(02324) 15521313</li>
                   <li class="cajaNav__info"><span class="icon-mail4"></span>hielosdz@gmail.com</li>
                   <li class="cajaNav__info"><span class="icon-location"></span>Ruta Nacional Nº 5 KM 91 - Gowland - Mercedes - Buenos Aires</li>
                 </ul>
@@ -76,10 +76,10 @@
     <!--inicia formulario de contacto-->
     <div class="formulario"> <!--BEM6-->
       <h1 class="titulo-central text-center">- Contacto -</h1>
-      <form class="row g-3">
+      <form class="row g-3" action="enviar.php" method="post">
         <div class="col-md-6">
           <label for="name" class="form-label">Nombre</label> <br>
-          <input type="text" name="nombre" class="form-control" placeholder="Escriba su nombre">
+          <input type="text" id="name" name="name" class="form-control" placeholder="Escriba su nombre">
         </div>
         <div class="col-md-6">
           <label for="inputEmail4" class="form-label">Email</label>
@@ -98,13 +98,13 @@
             <option>Evento</option>
           </select>
         </div>
-        <textarea class="col-md-6" name="" id="" cols="20" rows="5" placeholder="Dejanos tu consulta acá"></textarea>
+        <textarea class="col-md-6" name="consulta" id="consulta" cols="20" rows="5" placeholder="Dejanos tu consulta acá"></textarea>
         <div class="col-12">
           <button type="submit" class="btn btn-primary formulario__botonEnviar">Enviar consulta</button>
         </div>
       </form>
     </div>
-
+    <!--termina formulario-->
     <section>
       <article>
         <h3 class="text-center donde-estamos">¿Dónde estamos?</h3>
@@ -121,7 +121,7 @@
           <img src="./imagenes/HIELOS.png" class="imgFooter" alt="fábrica de hielo dz mercedes">
             <div class="card-body">
               <p><span class="icon-location"></span>Ruta Nacional Nº5 Km 91, Gowland, Mercedes, Buenos Aires </p>
-              <p><span class="icon-mobile"></span>(02324) 15539421</p>
+              <p><span class="icon-mobile"></span>(02324) 15521313</p>
               <p><span class="icon-mail4"></span>dzhielos@ventas.com</p>
             </div>
         </div>
@@ -152,18 +152,21 @@
         <div class="card col-lg-5" id="footerDiv3">
           <h4 class="text-center">Contactanos</h4>
           <div class="logosFooter">
-            <a href="https://wa.me/+540232415539421" target="_blank">
-              <img src="imagenes/wpplogo.png" alt="número de whatsapp" class="logo-redes">
-            </a>
-    
-            <a href="mailto:valentinavaccarezza@hotmail.com">
-              <img src="imagenes/mail.png" alt="mail de contacto" class="logo-redes">
-            </a>
-    
-            <a href="https://www.facebook.com/HielosDZmercedes" target="_blank">
-              <img src="imagenes/fblogo.png" alt="facebook hielos dz" class="logo-redes">
-            </a>
-          </div>
+            <div>
+              <a href="https://wa.me/+540232415521313" target="_blank">
+                <img src="imagenes/whatsapp.svg" alt="número de whatsapp" class="logo-redes">
+              </a>
+            </div>
+            <div>
+              <a href="mailto:fcvaccarezza@gmail.com">
+                <img src="imagenes/envelope-fill.svg" alt="mail de contacto" class="logo-redes">
+              </a> 
+            </div>
+            <div>
+              <a href="https://www.facebook.com/HielosDZmercedes" target="_blank">
+                <img src="imagenes/facebook (1).svg" alt="facebook hielos dz" class="logo-redes">
+              </a>
+            </div>
         </div>
       </div>
       <h5 class="firma text-center py-2">Página web desarrollada por <a href="https://www.linkedin.com/in/valentina-vaccarezza-554a939b/" target="_blank">Valentina Vaccarezza</a> </h5>

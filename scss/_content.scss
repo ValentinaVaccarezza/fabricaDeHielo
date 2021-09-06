@@ -1,6 +1,6 @@
 * {
-    margin:0;
-    padding:0
+    margin:0px;
+    padding:0px
 }
 body {
     background-color: white;
@@ -22,7 +22,7 @@ h4 {
 }
 
 .carousel-inner {
-    height:700px
+    height:600px
 }
 .carousel-item {
     height:50%;
@@ -32,31 +32,35 @@ h4 {
     }
 }
 .encabezado__tituloEncabezado {
-    margin-right:90%;
+    margin-left:54%;
     margin-bottom:80px;
     width:60%;
-    font-size:2.3em;
-    font-family: 'Comic Neue', cursive;
-    color: whitesmoke;
-    font-weight: bold;
-    text-transform:uppercase
+    font-size:2.5em;
+    font-family: monospace;
+    color: $fondo-nosotros;
+    font-weight: bolder;
+    text-transform:uppercase;
+    box-shadow: 0.5em 1em 1em #C7F8FD;
 }
 .tituloFoto2 {
     font-family: 'Comic Neue', cursive;
-    color: #6a93b9;
-    margin-bottom:20%;
-    background-image:radial-gradient(white, transparent);
-    font-weight: bolder;
+    color: whitesmoke;
+    margin-bottom:10%;
+    margin-left:10%;
+    font-weight:bolder;
     font-size:3em;
+    text-shadow: 4px 3px 2px #022859, 0 0em 2em #A3BFD9, 0 0 2em #A3BFD9;
 }
-.tituloFoto3 {
-    font-family: 'Comic Neue', cursive;
-    color: #385774;
+.textoFoto .tituloFoto3 {
+    font-family: monospace;
+    color: whitesmoke;
     font-weight: bolder;
-    margin-bottom:20%;
-    font-size:2.3em;
-    background-image:radial-gradient($fondo-body, transparent);
-    text-transform:uppercase
+    width:100%;
+    font-style: italic;
+    margin-bottom:160px;
+    margin-right:60%;
+    font-size:2.5em;
+    text-shadow: 1px 4px 2px $fondo-footer, 0 0 2em #A3BFD9, 0 0 0.2em #A3BFD9;
 }
 .textoEncabezado {
     margin-right:70%
@@ -65,10 +69,12 @@ h4 {
 .nosotrosMision {
     background-color:$fondo-nosotros;
     color:white;
+    font-family:'Comic Neue', cursive;
     line-height: $fontSizeBig;
     font-size:1.1em;
     a {
         text-decoration: none;
+        color:lightblue
     }
 }
 .nosotrosMision__titulo {
@@ -98,17 +104,19 @@ h4 {
     padding:14vh;
     .cajaImg {
         background-color: white;
-        border-color:transparent
+        border-color:transparent;
     }
+    
     .cajaVenta__imgVenta {
         width: $w-50; 
         margin-left:22%;
         padding:4vh;
-        /*border-style:solid;
-        border-color:#022859;*/
         border-radius:1vh;
-        box-shadow:0 0.7em 0.5em #033E8C;
+        box-shadow:0 0.7em 0.8em #022859;
     }
+    /*.cajaVenta__imgVenta:hover {
+        transform: scale(1.02,1.02);
+    }*/
     .cajaVenta__titulos {
         color:#022859;
         background-color:white;
@@ -122,9 +130,6 @@ h4 {
     border-radius:50%;
     box-shadow:0 0 1em #022859,
 }
-.imgProducto:hover {
-    transform: scale(1.02,1.02);
-}
 .cajaGrande {
     background-color:white;
 }
@@ -134,10 +139,12 @@ h4 {
     .cajaProducto__titulo {
         color: #022859;
         font-weight:bold;
-        font-size:1.6em
+        font-size:1.6em;
+        font-family:'Comic Neue', cursive;
     }
     .cajaProducto__texto {
         color: #022859;
+        font-family:'Comic Neue', cursive;
         font-size:1.2em
     }
 }
@@ -156,11 +163,48 @@ h4 {
     font-weight:bold;
     font-size:3em;    
 }
+.textoMaquinas {
+    font-family:'Comic Neue', cursive;
+    font-size:1.2em;
+    font-weight:500
+}
 .caja-maquinas {
     background-color:white;
     img {
         box-shadow: 0 0 1em rgb(13, 13, 71);
     }
+}
+.tituloInstalaciones {
+    font-family: 'Comic Neue', cursive;
+    font-size:3em;
+    width:100%;
+    margin-top:20%;
+    padding-top:30px;
+    text-align: center;
+    text-shadow: 1px 4px 2px $fondo-footer, 0 0 2em #A3BFD9, 0 0 0.2em #A3BFD9;
+}
+.textoFotoInst {
+    font-family:'Comic Neue', cursive;
+    font-size:2.5em;
+    width:100%;
+    margin-bottom:2%;
+    margin-left:14%;
+    background-color:rgb(32, 56, 100);
+}
+.textoBis {
+    font-family:'Comic Neue', cursive;
+    font-size:2.5em;
+    width:80%;
+    margin-bottom:10%;
+    background-color: rgb(32, 56, 100);
+}
+.textoFoto2 {
+    font-family: 'Comic Neue', cursive;
+    font-size:2.5em;
+    width:100%;
+    margin-bottom:6%;
+    padding:8%;
+    text-shadow: 1px 4px 2px $fondo-footer, 0 0 2em #A3BFD9, 0 0 0.2em #A3BFD9;
 }
 
 /*seccion distribución*/
@@ -180,9 +224,15 @@ h4 {
     }
 }
 .textoVehiculos {
-        font-family:'Dosis', sans-serif;
+        font-family:'Comic Neue', cursive;
         font-size:1.5em;
+        font-weight:400;
+        color:black;
         margin-left:3vh;
+}
+mark{
+    font-style:italic;
+    font-weight:bolder;
 }
 
 .cajaCiudades {
@@ -216,10 +266,6 @@ h4 {
         width:600px;
         border-radius:50%;
     }
-    .imgJugo .mojito {
-        width:600px;
-        height:300px
-    }
     h3 {
         color:white;
         font-family:'Dosis', sans-serif;;
@@ -234,6 +280,9 @@ h4 {
     }
     .btn {
         margin-top:4vh;
+    }
+    .cajaConsulta__info {
+        font-family:'Comic Neue', cursive;
     }
 }
 .camiones {
@@ -334,35 +383,40 @@ h4 {
         height:300px;
     }
     .encabezado__tituloEncabezado {
-        margin-right:90%;
-        margin-bottom:-6%;
-        width:60%;
+        margin-right:10%;
+        margin-bottom:-28%;
+        width:70%;
         font-size:1.2em;
-        font-weight: 400;
-        border-radius:50%;
+        font-weight: bold;
         padding:10% 10% 10% 10%;
+        
     }
-    
+    .imgCuchara {
+        width:60%;
+        margin-left:10%;
+    }
     .tituloMaquinas {
         font-size:1.8em
     }
     
     .tituloFoto2 {
         font-family: 'Comic Neue', cursive;
-        color: #33618d;
+        color: whitesmoke;
         margin-bottom:6%;
-        background-image:radial-gradient(white, transparent);
         border-radius:10%;
+        margin-left:8%;
         font-weight: bolder;
-        font-size:1.7em;
+        font-size:1.5em;
+        text-shadow: 2px 3px 2px #022859, 0 0em 2em #A3BFD9, 0 0 2em #A3BFD9;
     }
 }
-.tituloFoto3 {
-    margin-bottom:2%;
-    font-size:1.7em;
+.textoFoto .tituloFoto3 {
+    margin-bottom:26%;
+    font-size:1.2em;
     background-image: none;
     color:white;
-    text-transform:uppercase
+    text-transform:uppercase;
+    margin-right:20%;
 }
 @media screen and (min-width:441px) and (max-width: 768px) {
     .donde-estamos {
@@ -379,24 +433,49 @@ h4 {
     }
     .encabezado__tituloEncabezado {
         margin-right:90%;
-        margin-bottom:-6%;
+        margin-bottom:-20%;
         width:60%;
         font-size:1.2em;
-        font-weight: 400;
-        border-radius:50%;
+        font-weight: bold;
         padding:10% 10% 10% 10%;
+    }
+    .imgCuchara {
+        width:50%;
+        margin-left:10%;
+    }
+    #fotoVaso {
+        width:50%;
+        margin-left:10%
     }
     .tituloFoto2 {
         font-family: 'Comic Neue', cursive;
-        color: #33618d;
-        margin-bottom:6%;
-        background-image:radial-gradient(white, transparent);
+        color: whitesmoke;
+        margin-bottom:10%;
+        margin-left:10%;
         border-radius:10%;
         font-weight: bolder;
         font-size:1.7em;
+        text-shadow: 4px 3px 2px #022859, 0 0em 2em #A3BFD9, 0 0 2em #A3BFD9;
+    }
+    .textoFoto .tituloFoto3 {
+        margin-bottom:20%;
+        font-size:1.2em;
+        background-image: none;
+        color:white;
+        text-transform:uppercase;
+        margin-right:20%;
     }
 }
-
+@media screen and (min-width:630px) and (max-width:768px) {
+    .textoFoto .tituloFoto3 {
+        margin-bottom:14%;
+        font-size:1.2em;
+        background-image: none;
+        color:white;
+        text-transform:uppercase;
+        margin-right:20%;
+    }
+}
 @media screen and (min-width:769px) and (max-width:991px) {
     .donde-estamos {
         font-size:1.8em
@@ -406,12 +485,65 @@ h4 {
         height:400px;
         position:relative;
     }
+    .encabezado__tituloEncabezado {
+        margin-right:90%;
+        margin-bottom:-26%;
+        width:60%;
+        font-size:1.7em;
+        font-weight: bold;
+        padding:10% 10% 10% 10%;
+    }
+    .tituloFoto2 {
+        margin-bottom:-4%;
+        font-size:2em;
+    }
+    .textoFoto .tituloFoto3 {
+        margin-bottom:10%;
+        font-size:2em;
+        background-image: none;
+        color:white;
+        text-transform:uppercase;
+        margin-right:20%;
+    }
+}
+@media screen and (min-width:992px) and (max-width:1200px) {
+    .textoFoto .tituloFoto3 {
+        font-size:2.5em;
+    }
+}
+@media screen and (min-width:1201px) {
+    .textoFoto .tituloFoto3 {
+        margin-bottom:20%;
+        font-size:2.5em;
+    }
 }
 /*mobile instalaciones*/
 @media screen and (min-width:360px) and (max-width: 440px) {
     .titulo-central {
         font-size: 1.7em;
         padding:3vh
+    }
+    .tituloInstalaciones {
+        font-size:1.7em;
+        margin-bottom:-4%;
+        margin-top:0%;
+        padding-top:0px;
+    }
+    .textoFotoInst {
+        font-size:1em;
+        margin-bottom:2%;
+        margin-left:10%;
+    }
+    .textoBis {
+        font-size:1em;
+        margin-bottom:-6%;
+        margin-top:4%;
+        width:100%;
+    }
+    .textoFoto2 {
+        font-size:1em;
+        margin-bottom:14%;
+        padding:8%;
     }
 }
 @media screen and (min-width:441px) and (max-width:768px) {
@@ -422,16 +554,49 @@ h4 {
         letter-spacing:normal;
     }
 }
-
+@media screen and (min-width:769px) and (max-width:991px) {
+    .tituloInstalaciones {
+        font-size:2.5em;
+        margin-bottom:-16%;
+    }
+    .textoFotoInst {
+        font-size:2em;
+        margin-bottom:-4%;
+        margin-left:14%;
+    }
+    .textoBis {
+        font-size:2em;
+        margin-bottom:-10%;
+        margin-top:8%;
+    }
+    .textoFoto2 {
+        font-size:2em;
+        margin-bottom:2%;
+    }
+}
 /*mobile productos*/
 @media screen and (min-width:360px) and (max-width: 440px) {
     .tituloDonde {
-        padding:8vh; 
+        padding:4vh; 
         letter-spacing:1vh;
-        font-size:1.5em
+        line-height:1.5em;
+        font-size:1.5em;
+        margin:0
     }
     .cajaVenta .cajaVenta__titulos {
         text-align:center;
+        font-weight:300;
+        font-size:1.2em;
+        margin-left:4px;
+    }
+    .cajaImg .cajaVenta__imgVenta{
+        width:60%;
+        margin-left:20%;
+        margin-bottom:4%;
+        padding:1vh;
+    }
+    .donde-estamos {
+        padding:2vh
     }
     
 }
@@ -465,6 +630,10 @@ h4 {
         p {
             font-size:1em
         }
+        .cajaConsulta__info {
+            margin-top:0px;
+            margin-bottom:10px;
+        }
     }
     .distribucion {
         display:grid;
@@ -483,6 +652,7 @@ h4 {
         }
     }
 }
+
 @media screen and (min-width:441px) and (max-width:768px) {
     .distribucion {
         display:grid;
@@ -506,7 +676,7 @@ h4 {
         display:grid;
         grid-template-rows: repeat(2, 1fr);
         .imgJugo img {
-            width:70%;
+            width:40%;
             margin-bottom:0px;
             margin-top:20px;
             box-shadow: 0em 0em 1em black;
@@ -531,6 +701,22 @@ h4 {
     .camiones {
         width:50%;
         margin-left:25%;
+    }
+    .cajaConsulta {
+        line-height:1vh;
+        padding:18vh 4vh 0vh 4vh;
+        height:500px;
+        .imgJugo img {
+            width:100%;
+            box-shadow: 0em 0em 1em black;
+        }
+        h3 {
+            font-size:1.2em;
+            padding:0;
+        }
+        p {
+            font-size:1.1em
+        }
     }
 }
 /*mobile contacto*/

@@ -9,12 +9,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <title>Hielos DZ - Fábrica de hielo. Hielo en cubos, hielo en escamas, hielo en barra</title>
-    <meta name ="description" content="Página web de fábrica de hielo en Mercedes, Buenos Aires. Venta de hielo por mayor y menor. Hielo en escamas, cilíndrico, en barra y agua destilada"> <!--poner diferentes keyword, descripcion y titulo en las demas paginas !!!!-->
+    <meta name ="description" content="Página web de fábrica de hielo en Mercedes, Buenos Aires. Venta de hielo por mayor y menor. Hielo en escamas, cilíndrico, en barra y agua destilada">
     <meta name="keywords" content="hielos, hielo en escamas, venta de hielo, fábrica y distribuidora de hielo">
     <meta name="author" content="Valentina Vaccareza">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="shortcut icon" href="./imagenes/HIELOS.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   </head>
   <body>
     
@@ -34,7 +35,7 @@
           <div class="card-body">
             <ul class="cajaNav__lista">
               <li class="cajaNav__hielosNav">HIELOS DZ</li>
-              <li class="cajaNav__info"><span class="icon-mobile"></span>(02324) 15539421</li>
+              <li class="cajaNav__info"><span class="icon-mobile"></span>(02324) 15521313</li>
               <li class="cajaNav__info"><span class="icon-mail4"></span>hielosdz@gmail.com</li>
               <li class="cajaNav__info"><span class="icon-location"></span>Ruta Nacional Nº 5 KM 91 - Gowland - Mercedes - Buenos Aires</li>
             </ul>
@@ -71,28 +72,35 @@
     <header class="encabezado"> <!--BEM2-->
       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active botonFotos" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="botonFotos" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="botonFotos" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" class="botonFotos" aria-label="Slide 4"></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="./imagenes/foto1.jpg" class="encabezado__imgCarrousel img-fluid d-block w-100" alt="jugo con hielo">
+            <img src="./imagenes/drink.jpg" class="encabezado__imgCarrousel img-fluid d-block w-100" alt="jugo con hielo">
             <div class="carousel-caption d-md-block d-lg-block textoFoto">
-              <h1 class="encabezado__tituloEncabezado text-center">Bienvenidos a Hielos DZ</h1>
+              <h1 class="animate__animated animate__bounceInRight animate__delay-1s encabezado__tituloEncabezado text-center">Bienvenidos a Hielos DZ</h1>
               <p class="textoEncabezado"></p>
             </div>
           </div>
           <div class="carousel-item">
             <img src="./imagenes/brindis.jpeg" class="img-fluid d-block w-100" alt="personas brindando">
             <div class="carousel-caption d-md-block d-lg-block textoFoto">
-              <h2 class="tituloFoto2">DZ EN TU MESA SIEMPRE</h2>
+              <h2 class="tituloFoto2">Refresca tus momentos con DZ</h2>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="./imagenes/fresco.jpg" class="img-fluid d-block w-100" alt="frutas sobre hielo">
+            <img src="./imagenes/frescooo.jpg" class="img-fluid d-block w-100" alt="frutas sobre hielo">
             <div class="carousel-caption d-md-block d-lg-block textoFoto">
               <h2 class="tituloFoto3">Mantené tus productos frescos</h2>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./imagenes/tragoo.jpg" class="img-fluid d-block w-100" alt="tragos con hielos">
+            <div class="carousel-caption d-md-block d-lg-block textoFoto">
+              <h2 class="tituloFoto3">Hielos para coctelería </h2>
             </div>
           </div>
         
@@ -112,12 +120,12 @@
     <div class="card mb-3 nosotrosMision text-justify py-5 px-4" style="width:100%;">
       <div class="row g-0">
         <div class="col-lg-2 col-md-4 col-xs-12">
-        <img src="./imagenes/hielocuchara.jpg" class="img-fluid rounded-circle" alt="cuchara con hielos" id="cucharaHielo">
+        <img src="./imagenes/hielocuchara.jpg" class="imgCuchara img-fluid rounded-circle" alt="cuchara con hielos" id="cucharaHielo">
       </div>
       <div class="col-md-10">
         <div class="card-body">
           <h3 class="card-title nosotrosMision__titulo">Sobre nosotros</h3>
-          <p class="card-text">En DZ nos dedicamos a la <strong><em>fabricación y distribución de hielo</em></strong> desde el 2013. Nuestros productos se caracterizan por cumplir con las normas de calidad e higiene, entre ellos, <strong><a href="productos.html">hielo cilíndrico, hielo en escamas, en barra y agua destilada.</a></strong> Contamos con vehículos para la distribución tanto en comercios, estaciones de servicio y distribuidoras. <i>Agradecemos a nuestros clientes y a todo el equipo de empleados quienes hacen posible que la empresa siga creciendo día a día.</i></p>
+          <p class="card-text">En DZ nos dedicamos a la <strong><em>fabricación y distribución de hielo</em></strong> desde el 2013. Nuestros productos se caracterizan por cumplir con las normas de calidad e higiene, entre ellos, <strong><a href="productos.html">hielo cilíndrico, hielo en escamas, en barra y agua destilada.</a></strong> Contamos con vehículos para la distribución tanto en comercios, estaciones de servicio y distribuidoras. <br><i>Agradecemos a nuestros clientes y a todo el equipo de empleados quienes hacen posible que la empresa siga creciendo día a día.</i></p>
         </div>
       </div>
     </div>
@@ -136,6 +144,7 @@
         <img src="./imagenes/vaso.jpg" class="img-fluid rounded-circle" alt="vaso de hielo" id="fotoVaso">
       </div>
     </div>
+    </div>
 
     <section class="mapa"> <!--BEM4-->
       <div class="row">
@@ -151,9 +160,9 @@
       <div class="row">
         <div class="card col-lg-5" id="footerDiv1">
           <img src="./imagenes/HIELOS.png" class="imgFooter" alt="fábrica de hielo dz mercedes">
-          <div class="card-body">
+          <div class="card-body textoFooter">
             <p><span class="icon-location"></span>Ruta Nacional Nº5 Km 91, Gowland, Mercedes, Buenos Aires </p>
-            <p><span class="icon-mobile"></span>(02324) 15539421</p>
+            <p><span class="icon-mobile"></span>(02324) 15521313</p>
             <p><span class="icon-mail4"></span>dzhielos@ventas.com</p>
           </div>
         </div>
@@ -184,21 +193,27 @@
         <div class="card col-lg-5" id="footerDiv3">
           <h4 class="text-center">Contactanos</h4>
           <div class="logosFooter">
-            <a href="https://wa.me/+540232415539421" target="_blank">
-            <img src="imagenes/wpplogo.png" alt="número de whatsapp" class="logo-redes">
-            </a>
-      
-            <a href="mailto:valentinavaccarezza@hotmail.com">
-            <img src="imagenes/mail.png" alt="mail de contacto" class="logo-redes">
-            </a>
-      
-            <a href="https://www.facebook.com/HielosDZmercedes" target="_blank">
-            <img src="imagenes/fblogo.png" alt="facebook hielos dz" class="logo-redes">
-            </a>
+            <div>
+              <a href="https://wa.me/+540232415521313" target="_blank">
+                <img src="imagenes/whatsapp.svg" alt="número de whatsapp" class="logo-redes">
+              </a>
+            </div>
+            
+            <div>
+              <a href="mailto:fcvaccarezza@gmail.com">
+                <img src="imagenes/envelope-fill.svg" alt="mail de contacto" class="logo-redes">
+              </a>
+            </div>
+
+            <div>
+              <a href="https://www.facebook.com/HielosDZmercedes" target="_blank">
+                <img src="imagenes/facebook (1).svg" alt="facebook hielos dz" class="logo-redes">
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <h5 class="text-center py-2">Página web desarrollada por <a href="https://www.linkedin.com/in/valentina-vaccarezza-554a939b/" target="_blank">Valentina Vaccarezza</a> </h5>
+      <h5 class="text-center py-2 mx-0">Página web desarrollada por <a href="https://www.linkedin.com/in/valentina-vaccarezza-554a939b/" target="_blank">Valentina Vaccarezza</a> </h5>
     </footer>
   </body>
 </html>

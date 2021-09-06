@@ -103,23 +103,24 @@ nav {
   background-color: #022859;
   height: 8vh; }
 
-.navA .nav-item .nav-link {
-  color: white;
-  text-decoration: none;
-  font-family: 'Comic Neue', cursive;
-  font-size: 1.2em;
-  margin-left: 22px;
-  margin-top: 20px;
-  font-weight: 300;
-  text-transform: uppercase;
-  background-image: linear-gradient(currentColor, currentColor);
-  background-position: 0% 100%;
-  background-repeat: no-repeat;
-  background-size: 0% 2px;
-  transition: background-size .3s; }
-
-.nav-link:hover, .nav-link:focus {
-  background-size: 100% 2px; }
+.navA .nav-item {
+  text-transform: uppercase; }
+  .navA .nav-item:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0px;
+    background: transparent;
+    transition: width 0.3s ease, background-color 0.3s ease; }
+  .navA .nav-item:hover:after {
+    width: 100%;
+    background: white; }
+  .navA .nav-item .nav-link {
+    text-decoration: none;
+    font-size: 2.2rem; }
+    .navA .nav-item .nav-link:hover {
+      color: whitesmoke; }
 
 #divMenu {
   display: flex; }
@@ -130,6 +131,9 @@ nav {
     width: 100%;
     margin-top: 14px;
     margin-bottom: 0px; }
+
+.cajaNav {
+  width: 100%; }
 
 .cajaNav__lista {
   list-style: none;
@@ -175,10 +179,15 @@ nav {
       z-index: 1;
       position: absolute;
       width: 100%;
-      height: 400px;
-      padding: 10vh 30vh 5vh 24vh; }
+      height: 300px;
+      margin-top: 1vh;
+      padding: 4vh 10vh 4vh 30vh; }
       nav .navA .nav-item .nav-link {
-        font-size: 1em; }
+        font-size: 1em;
+        color: white;
+        line-height: 1.8em; }
+  .botonFotos {
+    display: none; }
   .divLogo {
     width: 50%;
     margin: 0; }
@@ -206,12 +215,16 @@ nav {
       z-index: 1;
       position: absolute;
       width: 100%;
-      height: 400px;
-      padding: 10vh 30vh 5vh 24vh; }
+      height: 300px;
+      margin-top: 1vh;
+      padding: 4vh 10vh 4vh 40vh; }
       nav .navA .nav-item .nav-link {
-        font-size: 1em; }
+        font-size: 1em;
+        color: white; }
+  .botonFotos {
+    display: none; }
   .divLogo {
-    width: 50%;
+    width: 30%;
     margin: 0; }
     .divLogo img {
       margin-top: 0px; }
@@ -226,6 +239,16 @@ nav {
   .carousel-inner {
     height: 40%; } }
 
+@media screen and (min-width: 511px) and (max-width: 613px) {
+  .divLogo {
+    width: 30%; } }
+
+@media screen and (min-width: 614px) and (max-width: 768px) {
+  .divLogo {
+    width: 20%; }
+  img {
+    width: 100%; } }
+
 @media screen and (min-width: 769px) and (max-width: 991px) {
   nav {
     height: 40vh; }
@@ -235,10 +258,12 @@ nav {
       position: absolute;
       width: 100%;
       height: 400px;
+      margin-top: 1vh;
       padding: 10vh 20vh 5vh 24vh; }
       nav .navA .nav-item .nav-link {
         font-size: 1.3em;
-        margin-left: 30%; }
+        margin-left: 30%;
+        color: white; }
   .divLogo {
     width: 10%;
     margin: 0; }
@@ -309,8 +334,8 @@ nav {
     font-size: 1.4em; } }
 
 * {
-  margin: 0;
-  padding: 0; }
+  margin: 0px;
+  padding: 0px; }
 
 body {
   background-color: white; }
@@ -330,7 +355,7 @@ h4 {
     color: white; }
 
 .carousel-inner {
-  height: 700px; }
+  height: 600px; }
 
 .carousel-item {
   height: 50%; }
@@ -339,31 +364,35 @@ h4 {
     height: 700px; }
 
 .encabezado__tituloEncabezado {
-  margin-right: 90%;
+  margin-left: 54%;
   margin-bottom: 80px;
   width: 60%;
-  font-size: 2.3em;
-  font-family: 'Comic Neue', cursive;
-  color: whitesmoke;
-  font-weight: bold;
-  text-transform: uppercase; }
+  font-size: 2.5em;
+  font-family: monospace;
+  color: #022859;
+  font-weight: bolder;
+  text-transform: uppercase;
+  box-shadow: 0.5em 1em 1em #C7F8FD; }
 
 .tituloFoto2 {
   font-family: 'Comic Neue', cursive;
-  color: #6a93b9;
-  margin-bottom: 20%;
-  background-image: radial-gradient(white, transparent);
+  color: whitesmoke;
+  margin-bottom: 10%;
+  margin-left: 10%;
   font-weight: bolder;
-  font-size: 3em; }
+  font-size: 3em;
+  text-shadow: 4px 3px 2px #022859, 0 0em 2em #A3BFD9, 0 0 2em #A3BFD9; }
 
-.tituloFoto3 {
-  font-family: 'Comic Neue', cursive;
-  color: #385774;
+.textoFoto .tituloFoto3 {
+  font-family: monospace;
+  color: whitesmoke;
   font-weight: bolder;
-  margin-bottom: 20%;
-  font-size: 2.3em;
-  background-image: radial-gradient(#A3BFD9, transparent);
-  text-transform: uppercase; }
+  width: 100%;
+  font-style: italic;
+  margin-bottom: 160px;
+  margin-right: 60%;
+  font-size: 2.5em;
+  text-shadow: 1px 4px 2px #033E8C, 0 0 2em #A3BFD9, 0 0 0.2em #A3BFD9; }
 
 .textoEncabezado {
   margin-right: 70%; }
@@ -371,10 +400,12 @@ h4 {
 .nosotrosMision {
   background-color: #022859;
   color: white;
+  font-family: 'Comic Neue', cursive;
   line-height: 2em;
   font-size: 1.1em; }
   .nosotrosMision a {
-    text-decoration: none; }
+    text-decoration: none;
+    color: lightblue; }
 
 .nosotrosMision__titulo {
   color: white;
@@ -400,7 +431,10 @@ h4 {
 
 .cajaVenta {
   background-color: white;
-  padding: 14vh; }
+  padding: 14vh;
+  /*.cajaVenta__imgVenta:hover {
+        transform: scale(1.02,1.02);
+    }*/ }
   .cajaVenta .cajaImg {
     background-color: white;
     border-color: transparent; }
@@ -408,10 +442,8 @@ h4 {
     width: 50%;
     margin-left: 22%;
     padding: 4vh;
-    /*border-style:solid;
-        border-color:#022859;*/
     border-radius: 1vh;
-    box-shadow: 0 0.7em 0.5em #033E8C; }
+    box-shadow: 0 0.7em 0.8em #022859; }
   .cajaVenta .cajaVenta__titulos {
     color: #022859;
     background-color: white;
@@ -424,9 +456,6 @@ h4 {
   border-radius: 50%;
   box-shadow: 0 0 1em #022859; }
 
-.imgProducto:hover {
-  transform: scale(1.02, 1.02); }
-
 .cajaGrande {
   background-color: white; }
 
@@ -436,9 +465,11 @@ h4 {
   .cajaProducto .cajaProducto__titulo {
     color: #022859;
     font-weight: bold;
-    font-size: 1.6em; }
+    font-size: 1.6em;
+    font-family: 'Comic Neue', cursive; }
   .cajaProducto .cajaProducto__texto {
     color: #022859;
+    font-family: 'Comic Neue', cursive;
     font-size: 1.2em; }
 
 /*termina productos*/
@@ -455,10 +486,47 @@ h4 {
   font-weight: bold;
   font-size: 3em; }
 
+.textoMaquinas {
+  font-family: 'Comic Neue', cursive;
+  font-size: 1.2em;
+  font-weight: 500; }
+
 .caja-maquinas {
   background-color: white; }
   .caja-maquinas img {
     box-shadow: 0 0 1em #0d0d47; }
+
+.tituloInstalaciones {
+  font-family: 'Comic Neue', cursive;
+  font-size: 3em;
+  width: 100%;
+  margin-top: 20%;
+  padding-top: 30px;
+  text-align: center;
+  text-shadow: 1px 4px 2px #033E8C, 0 0 2em #A3BFD9, 0 0 0.2em #A3BFD9; }
+
+.textoFotoInst {
+  font-family: 'Comic Neue', cursive;
+  font-size: 2.5em;
+  width: 100%;
+  margin-bottom: 2%;
+  margin-left: 14%;
+  background-color: #203864; }
+
+.textoBis {
+  font-family: 'Comic Neue', cursive;
+  font-size: 2.5em;
+  width: 80%;
+  margin-bottom: 10%;
+  background-color: #203864; }
+
+.textoFoto2 {
+  font-family: 'Comic Neue', cursive;
+  font-size: 2.5em;
+  width: 100%;
+  margin-bottom: 6%;
+  padding: 8%;
+  text-shadow: 1px 4px 2px #033E8C, 0 0 2em #A3BFD9, 0 0 0.2em #A3BFD9; }
 
 /*seccion distribución*/
 .tituloCiudades {
@@ -475,9 +543,15 @@ h4 {
     font-size: 1.3em; }
 
 .textoVehiculos {
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Comic Neue', cursive;
   font-size: 1.5em;
+  font-weight: 400;
+  color: black;
   margin-left: 3vh; }
+
+mark {
+  font-style: italic;
+  font-weight: bolder; }
 
 .cajaCiudades {
   background-color: white; }
@@ -506,9 +580,6 @@ h4 {
   .cajaConsulta .imgJugo img {
     width: 600px;
     border-radius: 50%; }
-  .cajaConsulta .imgJugo .mojito {
-    width: 600px;
-    height: 300px; }
   .cajaConsulta h3 {
     color: white;
     font-family: 'Dosis', sans-serif;
@@ -521,6 +592,8 @@ h4 {
     margin-top: 2vh; }
   .cajaConsulta .btn {
     margin-top: 4vh; }
+  .cajaConsulta .cajaConsulta__info {
+    font-family: 'Comic Neue', cursive; }
 
 .camiones {
   width: 100%;
@@ -601,30 +674,34 @@ h4 {
     width: 100px;
     height: 300px; }
   .encabezado__tituloEncabezado {
-    margin-right: 90%;
-    margin-bottom: -6%;
-    width: 60%;
+    margin-right: 10%;
+    margin-bottom: -28%;
+    width: 70%;
     font-size: 1.2em;
-    font-weight: 400;
-    border-radius: 50%;
+    font-weight: bold;
     padding: 10% 10% 10% 10%; }
+  .imgCuchara {
+    width: 60%;
+    margin-left: 10%; }
   .tituloMaquinas {
     font-size: 1.8em; }
   .tituloFoto2 {
     font-family: 'Comic Neue', cursive;
-    color: #33618d;
+    color: whitesmoke;
     margin-bottom: 6%;
-    background-image: radial-gradient(white, transparent);
     border-radius: 10%;
+    margin-left: 8%;
     font-weight: bolder;
-    font-size: 1.7em; } }
+    font-size: 1.5em;
+    text-shadow: 2px 3px 2px #022859, 0 0em 2em #A3BFD9, 0 0 2em #A3BFD9; } }
 
-.tituloFoto3 {
-  margin-bottom: 2%;
-  font-size: 1.7em;
+.textoFoto .tituloFoto3 {
+  margin-bottom: 26%;
+  font-size: 1.2em;
   background-image: none;
   color: white;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-right: 20%; }
 
 @media screen and (min-width: 441px) and (max-width: 768px) {
   .donde-estamos {
@@ -638,20 +715,42 @@ h4 {
     height: 300px; }
   .encabezado__tituloEncabezado {
     margin-right: 90%;
-    margin-bottom: -6%;
+    margin-bottom: -20%;
     width: 60%;
     font-size: 1.2em;
-    font-weight: 400;
-    border-radius: 50%;
+    font-weight: bold;
     padding: 10% 10% 10% 10%; }
+  .imgCuchara {
+    width: 50%;
+    margin-left: 10%; }
+  #fotoVaso {
+    width: 50%;
+    margin-left: 10%; }
   .tituloFoto2 {
     font-family: 'Comic Neue', cursive;
-    color: #33618d;
-    margin-bottom: 6%;
-    background-image: radial-gradient(white, transparent);
+    color: whitesmoke;
+    margin-bottom: 10%;
+    margin-left: 10%;
     border-radius: 10%;
     font-weight: bolder;
-    font-size: 1.7em; } }
+    font-size: 1.7em;
+    text-shadow: 4px 3px 2px #022859, 0 0em 2em #A3BFD9, 0 0 2em #A3BFD9; }
+  .textoFoto .tituloFoto3 {
+    margin-bottom: 20%;
+    font-size: 1.2em;
+    background-image: none;
+    color: white;
+    text-transform: uppercase;
+    margin-right: 20%; } }
+
+@media screen and (min-width: 630px) and (max-width: 768px) {
+  .textoFoto .tituloFoto3 {
+    margin-bottom: 14%;
+    font-size: 1.2em;
+    background-image: none;
+    color: white;
+    text-transform: uppercase;
+    margin-right: 20%; } }
 
 @media screen and (min-width: 769px) and (max-width: 991px) {
   .donde-estamos {
@@ -659,13 +758,57 @@ h4 {
   .carousel-inner {
     z-index: 0;
     height: 400px;
-    position: relative; } }
+    position: relative; }
+  .encabezado__tituloEncabezado {
+    margin-right: 90%;
+    margin-bottom: -26%;
+    width: 60%;
+    font-size: 1.7em;
+    font-weight: bold;
+    padding: 10% 10% 10% 10%; }
+  .tituloFoto2 {
+    margin-bottom: -4%;
+    font-size: 2em; }
+  .textoFoto .tituloFoto3 {
+    margin-bottom: 10%;
+    font-size: 2em;
+    background-image: none;
+    color: white;
+    text-transform: uppercase;
+    margin-right: 20%; } }
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .textoFoto .tituloFoto3 {
+    font-size: 2.5em; } }
+
+@media screen and (min-width: 1201px) {
+  .textoFoto .tituloFoto3 {
+    margin-bottom: 20%;
+    font-size: 2.5em; } }
 
 /*mobile instalaciones*/
 @media screen and (min-width: 360px) and (max-width: 440px) {
   .titulo-central {
     font-size: 1.7em;
-    padding: 3vh; } }
+    padding: 3vh; }
+  .tituloInstalaciones {
+    font-size: 1.7em;
+    margin-bottom: -4%;
+    margin-top: 0%;
+    padding-top: 0px; }
+  .textoFotoInst {
+    font-size: 1em;
+    margin-bottom: 2%;
+    margin-left: 10%; }
+  .textoBis {
+    font-size: 1em;
+    margin-bottom: -6%;
+    margin-top: 4%;
+    width: 100%; }
+  .textoFoto2 {
+    font-size: 1em;
+    margin-bottom: 14%;
+    padding: 8%; } }
 
 @media screen and (min-width: 441px) and (max-width: 768px) {
   .tituloMaquinas {
@@ -673,14 +816,42 @@ h4 {
   .donde-estamos {
     letter-spacing: normal; } }
 
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  .tituloInstalaciones {
+    font-size: 2.5em;
+    margin-bottom: -16%; }
+  .textoFotoInst {
+    font-size: 2em;
+    margin-bottom: -4%;
+    margin-left: 14%; }
+  .textoBis {
+    font-size: 2em;
+    margin-bottom: -10%;
+    margin-top: 8%; }
+  .textoFoto2 {
+    font-size: 2em;
+    margin-bottom: 2%; } }
+
 /*mobile productos*/
 @media screen and (min-width: 360px) and (max-width: 440px) {
   .tituloDonde {
-    padding: 8vh;
+    padding: 4vh;
     letter-spacing: 1vh;
-    font-size: 1.5em; }
+    line-height: 1.5em;
+    font-size: 1.5em;
+    margin: 0; }
   .cajaVenta .cajaVenta__titulos {
-    text-align: center; } }
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.2em;
+    margin-left: 4px; }
+  .cajaImg .cajaVenta__imgVenta {
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 4%;
+    padding: 1vh; }
+  .donde-estamos {
+    padding: 2vh; } }
 
 @media screen and (min-width: 441px) and (max-width: 768px) {
   .cajaVenta .cajaVenta__titulos {
@@ -707,6 +878,9 @@ h4 {
       padding: 0; }
     .cajaConsulta p {
       font-size: 1em; }
+    .cajaConsulta .cajaConsulta__info {
+      margin-top: 0px;
+      margin-bottom: 10px; }
   .distribucion {
     display: grid;
     grid-template-areas: 1000px 1000px; }
@@ -737,7 +911,7 @@ h4 {
     display: grid;
     grid-template-rows: repeat(2, 1fr); }
     .cajaConsulta .imgJugo img {
-      width: 70%;
+      width: 40%;
       margin-bottom: 0px;
       margin-top: 20px;
       box-shadow: 0em 0em 1em black; }
@@ -755,7 +929,19 @@ h4 {
     grid-template-areas: 1000px 1000px; }
   .camiones {
     width: 50%;
-    margin-left: 25%; } }
+    margin-left: 25%; }
+  .cajaConsulta {
+    line-height: 1vh;
+    padding: 18vh 4vh 0vh 4vh;
+    height: 500px; }
+    .cajaConsulta .imgJugo img {
+      width: 100%;
+      box-shadow: 0em 0em 1em black; }
+    .cajaConsulta h3 {
+      font-size: 1.2em;
+      padding: 0; }
+    .cajaConsulta p {
+      font-size: 1.1em; } }
 
 /*mobile contacto*/
 @media screen and (min-width: 360px) and (max-width: 440px) {
@@ -811,8 +997,10 @@ h4 {
 
 .logo-redes {
   padding: 1vh;
-  background-color: #124c81;
+  background-color: #476b99;
   border-radius: 2vh;
+  border-style: solid;
+  border-color: black;
   width: 8vh;
   margin-top: 2em;
   margin-left: 46%; }
@@ -876,18 +1064,18 @@ h5 {
 
 /*mobile first*/
 @media screen and (min-width: 360px) and (max-width: 440px) {
+  .logosFooter {
+    display: grid;
+    grid-template-columns: 33% 33% 33%; }
   .logo-redes {
-    margin-right: 2em;
-    margin-left: 3.5em;
-    margin-top: 3em;
-    margin-bottom: 0; }
+    margin-top: 12vh; }
   .imgFooter {
     width: 24%;
     margin-left: 10%;
-    margin-top: 14%;
+    margin-top: 8%;
     height: 50%; }
   .textoFooter {
-    margin-top: 10%; }
+    margin-top: 4%; }
   h4 {
     font-size: 0.5em; }
   #footerDiv1, #footerDiv2, #footerDiv3 {
@@ -897,24 +1085,23 @@ h5 {
     height: 300px; }
   #footerDiv1 {
     display: flex;
-    flex-direction: row; }
-  .logosFooter {
-    display: flex;
-    flex-direction: row; } }
+    flex-direction: row;
+    padding-top: 3vh; } }
 
 @media screen and (min-width: 441px) and (max-width: 768px) {
   .imgFooter {
     width: 24%;
     margin-left: 10%;
-    margin-top: 14%;
+    margin-top: 12%;
     height: 50%; }
+  .textoFooter {
+    margin-top: 0%; }
   .logosFooter {
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    justify-content: space-around; }
   .logo-redes {
-    margin-right: 2em;
-    margin-left: 3.5em;
-    margin-top: 3em;
+    margin-top: 3.2em;
     margin-bottom: 0; }
   #footerDiv1, #footerDiv2, #footerDiv3 {
     padding: 0;
@@ -927,25 +1114,31 @@ h5 {
   .textoFooter {
     margin-top: 10%; } }
 
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .imgFooter {
+    width: fit-content; } }
+
 @media screen and (min-width: 769px) and (max-width: 991px) {
   .logosFooter {
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    justify-content: space-around; }
+  .textoFooter {
+    margin-top: 4%; }
   .logo-redes {
-    margin-right: 2em;
-    margin-left: 10em;
     margin-top: 3em;
     margin-bottom: 0;
     width: 10vh; }
   .imgFooter {
-    margin-left: 20%;
-    width: 30%; }
+    margin-left: 10%;
+    margin-top: 2%;
+    width: fit-content; }
   #footerDiv1, #footerDiv2, #footerDiv3 {
     padding: 0;
     height: 220px; }
   #footerDiv1 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); }
+    display: flex;
+    flex-direction: row; }
   #footerDiv2 {
     height: 300px; } }
 
